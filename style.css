@@ -138,7 +138,7 @@ header nav ul li a:hover, header nav ul li a:focus {
     font-weight: normal;
 }
 
-section:nth-child(2n) {
+section:nth-child(2n-1) {
     background-color: var(--green2);
     color: var(--green12);
 }
@@ -159,7 +159,7 @@ section h2:not(:first-child), section h3:not(:first-child) {
     margin-top: 16px;
 }
 
-section:nth-child(2n) h2 {
+section:nth-child(2n-1) h2 {
     color: var(--green13);
 }
 
