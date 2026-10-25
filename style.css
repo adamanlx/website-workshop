@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat');
+
+:root {
+    --green1: #fbfefc;
+    --green2: #f4fbf6;
+    --green3: #e6f6eb;
+    --green4: #d6f1df;
+    --green5: #c4e8d1;
+    --green6: #adddc0;
+    --green7: #8eceaa;
+    --green8: #5bb98b;
+    --green9: #30a46c;
+    --green10: #2b9a66;
+    --green11: #1F7A53;
+    --green12: #1A563D;
+    --green13: #193b2d;
+    --gray1: #fcfcfc;
+    --gray2: #f9f9f9;
+    --gray3: #f0f0f0;
+    --gray4: #e8e8e8;
+    --gray5: #e0e0e0;
+    --gray6: #d9d9d9;
+    --gray7: #cecece;
+    --gray8: #bbbbbb;
+    --gray9: #8d8d8d;
+    --gray10: #838383;
+    --gray11: #646464;
+    --gray12: #424242;
+    --gray13: #202020;
+    --serif: Merriweather, serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    display: grid;
+}
+
+p:not(:last-child), ul:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+li:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+header, section {
+    padding-left: max(calc((100vw - 75ch) / 2), 10vw);
+    padding-right: max(calc((100vw - 75ch) / 2), 10vw);
+}
+
+section {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+section:last-child {
+    padding-bottom: 96px;
+}
+
+header {
+    background-color: var(--green12);
+    color: var(--gray1);
+    padding-top: 24px;
+    padding-bottom: 24px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 24px;
+    font-family: var(--serif);
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+header li {
+    padding: 0px;
+}
+
+header nav ul li a {
+    font-size: 18px;
+    text-decoration: none;
+}
+
+header nav ul li a:hover, header nav ul li a:focus {
+    color: var(--green5);
+}
+
+@media (min-width: 950px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    header h1 {
+        margin-bottom: 0;
+    }
+}
+
+#intro {
+    background-color: white;
+    display: flex;
+}
+
+#intro img {
+    height: 192px;
+    margin-right: 24px;
+}
+
+#intro-content {
+    text-align: right;
+    flex-grow: 1;
+    font-family: var(--serif);
+}
+
+#intro-content h2 {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+#intro-content h3, #intro-content p {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+#ctas {
+    padding-top: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#ctas a {
+    display: block;
+    padding: 12px;
+    background-color: var(--green9);
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--gray1);
+}
+
+#ctas a:hover, #ctas a:focus {
+    background-color: var(--green10);
+}
+
+section:nth-child(2n) {
+    background-color: var(--green2);
+    color: var(--green12);
+}
+
+section h2 {
+    font-family: var(--serif);
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+section h3 {
+    font-family: var(--serif);
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+section h2:not(:first-child), section h3:not(:first-child) {
+    margin-top: 16px;
+}
+
+section:nth-child(2n) h2 {
+    color: var(--green13);
+}
+
+section#photo-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 100%;
+    gap: 16px;
+}
+
+section#photo-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
