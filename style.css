@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat');
 
 :root {
-    --green1: #fbfefc;
-    --green2: #f4fbf6;
-    --green3: #e6f6eb;
-    --green4: #d6f1df;
-    --green5: #c4e8d1;
-    --green6: #adddc0;
-    --green7: #8eceaa;
-    --green8: #5bb98b;
-    --green9: #30a46c;
-    --green10: #2b9a66;
-    --green11: #1F7A53;
-    --green12: #1A563D;
-    --green13: #193b2d;
+    --color1: #fbfefc;
+    --color2: #f4fbf6;
+    --color3: #e6f6eb;
+    --color4: #d6f1df;
+    --color5: #c4e8d1;
+    --color6: #adddc0;
+    --color7: #8eceaa;
+    --color8: #5bb98b;
+    --color9: #30a46c;
+    --color10: #2b9a66;
+    --color11: #1F7A53;
+    --color12: #1A563D;
+    --color13: #193b2d;
     --gray1: #fcfcfc;
     --gray2: #f9f9f9;
     --gray3: #f0f0f0;
@@ -27,6 +27,8 @@
     --gray11: #646464;
     --gray12: #424242;
     --gray13: #202020;
+
+    
     --serif: Merriweather, serif;
 }
 
@@ -66,7 +68,7 @@ section:last-child {
 }
 
 header {
-    background-color: var(--green12);
+    background-color: var(--color12);
     color: var(--gray1);
     padding-top: 24px;
     padding-bottom: 24px;
@@ -97,7 +99,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover, header nav ul li a:focus {
-    color: var(--green5);
+    color: var(--color5);
 }
 
 @media (min-width: 950px) {
@@ -139,8 +141,8 @@ header nav ul li a:hover, header nav ul li a:focus {
 }
 
 section:nth-child(2n-1) {
-    background-color: var(--green2);
-    color: var(--green12);
+    background-color: var(--color2);
+    color: var(--color12);
 }
 
 section h2 {
@@ -160,7 +162,7 @@ section h2:not(:first-child), section h3:not(:first-child) {
 }
 
 section:nth-child(2n-1) h2 {
-    color: var(--green13);
+    color: var(--color13);
 }
 
 section#photo-gallery {
